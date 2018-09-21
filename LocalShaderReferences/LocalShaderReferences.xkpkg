@@ -1,0 +1,43 @@
+!Package
+Id: 97ecfb22-8b7e-4dcf-82f6-ccba8200aa48
+SerializedVersion: {Assets: 0.0.4}
+Meta:
+    Name: LocalShaderReferences
+    Version: 1.0.0.0
+    Authors: []
+    Owners: []
+    RootNamespace: LocalShaderReferences
+    Dependencies:
+        -   Name: Xenko
+            Version: 3.0.0.5
+            RootAssets: []
+LocalDependencies: []
+Profiles:
+    -   Name: Shared
+        Platform: Shared
+        InheritProfiles: []
+        AssetFolders:
+            -   Path: Assets/Shared
+            -   Path: LocalShaderReferences.Game/Effects
+        ResourceFolders:
+            - Resources
+        OutputGroupDirectories: {}
+        ProjectReferences:
+            -   Id: 5b1ce9ef-d39e-4804-af74-0bf03c837e65
+                Location: LocalShaderReferences.Game/LocalShaderReferences.Game.csproj
+                Type: Library
+    -   Name: Windows
+        Platform: Windows
+        InheritProfiles: []
+        AssetFolders:
+            -   Path: Assets/Windows
+        ResourceFolders: []
+        OutputGroupDirectories: {}
+        ProjectReferences:
+            -   Id: ae7eaa89-daec-4fad-bdc9-080dd7e77450
+                Location: LocalShaderReferences.Windows/LocalShaderReferences.Windows.csproj
+                Type: Executable
+ExplicitFolders: []
+Bundles: []
+TemplateFolders: []
+RootAssets: []

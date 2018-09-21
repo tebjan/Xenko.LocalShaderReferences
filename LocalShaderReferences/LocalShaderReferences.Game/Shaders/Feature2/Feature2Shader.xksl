@@ -1,0 +1,5 @@
+﻿//how can this shader see the BaseShader?
+shader Feature2Shader : Texturing, BaseShader
+{
+   
+};
