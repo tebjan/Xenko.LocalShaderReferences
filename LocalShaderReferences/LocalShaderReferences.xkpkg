@@ -19,6 +19,7 @@ Profiles:
         AssetFolders:
             -   Path: Assets/Shared
             -   Path: LocalShaderReferences.Game/Effects
+            -   Path: LocalShaderReferences.Game/Shaders
         ResourceFolders:
             - Resources
         OutputGroupDirectories: {}

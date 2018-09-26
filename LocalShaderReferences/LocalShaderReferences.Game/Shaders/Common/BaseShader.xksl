@@ -1,5 +1,7 @@
-﻿
-shader BaseShader
+﻿shader BaseShader
 {
-   
+    float4 GetColor()
+    {
+        return float4(0, 1, 0, 1);
+    }
 };

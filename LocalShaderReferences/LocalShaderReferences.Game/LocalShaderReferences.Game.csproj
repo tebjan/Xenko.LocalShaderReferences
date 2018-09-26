@@ -1,16 +1,18 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>net461</TargetFramework>
     <RootNamespace>LocalShaderReferences</RootNamespace>
   </PropertyGroup>
-
   <ItemGroup>
-    <PackageReference Include="Xenko" Version="3.0.0.5">
+    <Compile Remove="Assets\**" />
+    <EmbeddedResource Remove="Assets\**" />
+    <None Remove="Assets\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xenko" Version="3.0.0.6-dev">
       <PrivateAssets>contentfiles;analyzers</PrivateAssets>
     </PackageReference>
   </ItemGroup>
-
   <ItemGroup>
     <Compile Update="Shaders\Common\BaseShader.cs">
       <DesignTime>True</DesignTime>
@@ -28,7 +30,6 @@
       <DependentUpon>Feature2Shader.xksl</DependentUpon>
     </Compile>
   </ItemGroup>
-
   <ItemGroup>
     <None Update="Shaders\Common\BaseShader.xksl">
       <Generator>XenkoShaderKeyGenerator</Generator>

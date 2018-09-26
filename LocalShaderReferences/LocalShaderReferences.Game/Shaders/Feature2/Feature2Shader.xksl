@@ -1,5 +1,9 @@
 ﻿//how can this shader see the BaseShader?
-shader Feature2Shader : Texturing, BaseShader
+shader Feature2Shader : ComputeColor, BaseShader
 {
-   
+    float4 Val;
+    override float4 Compute()
+    {
+        return GetColor();
+    }
 };
